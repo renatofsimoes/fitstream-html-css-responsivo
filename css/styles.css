@@ -1,0 +1,60 @@
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+p {
+  color: #70747a;
+}
+
+/* Navbar */
+.navbar-container {
+  width: 100%;
+  height: 80px;
+  background-color: #3b4e62;
+  padding: 0 2rem;
+}
+.logo {
+  width: 150px;
+  height: auto;
+  margin-top: 5px;
+}
+.navbar-items {
+  position: absolute;
+  right: 50px;
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
+  display: inline-block;
+}
+.navbar-items li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+.navbar-items a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+/* muda de cor ao passar o mouse por cima */
+.navbar-items a:hover {
+  color: #ccc;
+}
+.default-btn {
+  padding: 15px 20px;
+  background-color: #07d8a1;
+  border-radius: 5px;
+}
+.navbar-items .default-btn:hover {
+  background-color: #0cb688;
+  color: #fff;
+}
