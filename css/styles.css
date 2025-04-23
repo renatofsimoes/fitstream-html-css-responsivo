@@ -9,10 +9,10 @@
 h1,
 h2,
 h3 {
-  color: #333;
+  color: #3b4e62;
 }
 p {
-  color: #70747a;
+  color: #515b66;
 }
 
 /* Navbar */
@@ -26,6 +26,7 @@ p {
   width: 150px;
   height: auto;
   margin-top: 5px;
+  border-radius: 4px;
 }
 .navbar-items {
   position: absolute;
@@ -51,10 +52,176 @@ p {
 }
 .default-btn {
   padding: 15px 20px;
-  background-color: #07d8a1;
+  background-color: #26a753;
   border-radius: 5px;
 }
 .navbar-items .default-btn:hover {
-  background-color: #0cb688;
+  background-color: #208c46;
   color: #fff;
+}
+/* Main banner */
+.main-banner {
+  background-image: url("../img/fit2.jpg");
+  padding: 10rem 0;
+  background-size: cover;
+  background-position: center;
+}
+.main-banner h1,
+.main-banner p {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: #000 3px 2px 3px;
+}
+.main-banner h1 {
+  font-size: 60px;
+}
+.main-banner p {
+  font-size: 32px;
+}
+.main-banner-text {
+  background-color: rgba(59, 78, 98, 0.5);
+
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+/* Benefits */
+.benefits-container {
+  padding: 5rem 0;
+}
+.benefits-container ul {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+.benefits-container li {
+  flex: 1 1 200px;
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+}
+.fas {
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+.fa-brain {
+  color: #c25da7;
+}
+.fa-medal {
+  color: #dfd50d;
+}
+.fa-clock {
+  color: #e30000;
+}
+.benefits-container h3 {
+  margin-bottom: 25px;
+  font-size: larger;
+}
+.benefits-container p {
+  line-height: 30px;
+}
+
+/* Prices and Plans */
+.pricing-container {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.pricing-container h2 {
+  font-size: 36px;
+  margin-top: 0;
+}
+.pricing-container p {
+  font-size: 20px;
+}
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50px auto 0;
+}
+.plan {
+  flex: 1;
+  max-width: 295px;
+  margin: 0 20px;
+}
+.plan ul {
+  padding: 0;
+}
+.plan li {
+  list-style: none;
+  max-height: 200px;
+  line-height: 50px;
+  background-color: #e8e9ea;
+  color: #515b66;
+}
+.plan .plan-name {
+  width: 120px;
+  height: 120px;
+  border-radius: 70px;
+  border: 5px double #3b4e62;
+  background-color: #2cc762;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  margin: 0 auto -50px;
+  padding-top: 33px;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+}
+.plan .discount-name {
+  background-color: #e30000;
+}
+.plan .elite-name {
+  background-color: #a58700;
+}
+.plan .discount-price .discounted-price {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin-bottom: -15px;
+  text-decoration: line-through;
+  color: #e30000;
+}
+.plan .price {
+  padding-top: 50px;
+  background-color: #3b4e62;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  border: 3px solid #2cc762;
+  font-weight: bold;
+}
+.plan .discount-price {
+  padding-top: 45px;
+  border: 3px solid #e30000;
+}
+.plan .elite-price {
+  border: 3px solid #a58700;
+}
+.plan .plan-btn {
+  background-color: #2cc762;
+  color: #fff;
+  font-size: 24px;
+  height: 75px;
+  line-height: 75px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.plan .plan-btn:hover {
+  background-color: #208c46;
+}
+.plan .discount-btn {
+  background-color: #e30000;
+}
+.plan .discount-btn:hover {
+  background-color: #a10101;
+}
+.plan .elite-btn {
+  background-color: #a58700;
+}
+.plan .elite-btn:hover {
+  background-color: #7b6500;
 }
