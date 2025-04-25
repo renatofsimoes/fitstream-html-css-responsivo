@@ -232,9 +232,6 @@ p {
   padding: 2rem;
   text-align: center;
   background-color: #3b4e62;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 8px;
 }
 .faq-container h2 {
   font-size: 40px;
@@ -314,4 +311,94 @@ footer {
   text-align: center;
   font-weight: bold;
   margin: 20px 0 100px;
+}
+
+/* Responsividade (Breakpoints)*/
+
+/* small laptops */
+@media (max-width: 1110px) {
+  .plans-container {
+    width: 95%;
+  }
+  .plan {
+    margin: 0 5px;
+  }
+}
+/* tablet 900px*/
+@media (max-width: 900px) {
+  .main-banner p {
+    font-size: 25px;
+    padding: 0 6rem;
+  }
+  .faq-grid {
+    width: 100%;
+  }
+  .faq-item {
+    padding: 15px;
+  }
+  .plan .price {
+    font-size: 25px;
+  }
+}
+
+/* celular grande 576px */
+@media (max-width: 576px) {
+  .logo {
+    width: 140px;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .navbar-items {
+    right: 15px;
+  }
+  .main-banner p {
+    font-size: larger;
+  }
+  .plans-container {
+    flex-direction: column;
+  }
+  .benefits-container ul {
+    flex-direction: column;
+  }
+  .plan {
+    flex: 1;
+    min-width: 295px;
+    margin: 10px auto;
+  }
+  .contact-container {
+    padding: 3rem 2rem;
+  }
+  .contact-container input,
+  .contact-container textarea {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .faq-grid {
+    flex-direction: column;
+  }
+}
+
+/* celular médio 425px */
+@media (max-width: 425px) {
+  .navbar-items li {
+    font-size: small;
+  }
+  .navbar-items {
+    right: 10px;
+  }
+  .main-banner p {
+    padding: 60px;
+  }
+}
+
+/* celular pequeno 375px */
+@media (max-width: 375px) {
+  .navbar-items li {
+    font-size: x-small;
+  }
+  .navbar-items {
+    right: 6px;
+  }
 }
